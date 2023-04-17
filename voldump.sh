@@ -18,6 +18,9 @@ function scanImages () {
     shopt -s nullglob
 	images=(*.dmp)
     echo "Found ${#images[@]} image(s)"
+	for img in "${images[@]}"; do
+		echo "- $img"
+	done
 }
 
 main
